@@ -1,0 +1,58 @@
+* {
+  text-decoration: none;
+  color: #96c9f4;
+}
+
+.wrapper {
+  height: 120px;
+  padding: 12px 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.letter {
+  color: #3fa2f6;
+  transition: all 0.3s;
+  animation: logoAny 10s infinite ease-in-out;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  margin: 0 25px;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #0f67b1;
+  font-weight: 800;
+  transform: scale(1.1);
+}
+
+@keyframes logoAny {
+  0% {
+    color: #96c9f4;
+  }
+  25% {
+    color: #3fa2f6;
+  }
+  50% {
+    color: #4a249d;
+  }
+  75% {
+    color: #071952;
+  }
+  100% {
+    color: #96c9f4;
+  }
+}

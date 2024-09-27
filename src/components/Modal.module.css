@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+
+.modalWrapperShow {
+  position: fixed;
+  translate: (-50%, 0);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  animation: showing 0.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #bbe9ff, #b1afff);
+  padding-bottom: 20px;
+}
+
+@keyframes showing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 45px;
+  color: #4c3bcf;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.imgWrapper {
+  width: 80%;
+  border-radius: 10px;
+  background-color: #bbe9ff;
+  box-shadow: 5px 5px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeBtn {
+  border: 2px solid #b1afff;
+  background: #fff;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: #b1afff;
+  font-weight: 900;
+  transition: all 0.2s;
+}
+
+.closeBtn:hover {
+  background-color: #b1afff;
+  color: #fff;
+}
+
+.weatherImg {
+  height: 360px;
+}
+
+.weatherInfo p {
+  color: #4c3bcf;
+  font-family: "Sunflower", sans-serif;
+}
+
+.weatherInfo p span {
+  font-weight: 900;
+  font-size: 20px;
+  color: #4c3bcf;
+}
